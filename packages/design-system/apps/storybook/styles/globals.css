@@ -1,0 +1,89 @@
+@import '@strathon/tokens/dist/css/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Strathon Design System Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Strathon Design System Typography Classes */
+  .text-display-xl {
+    @apply text-5xl font-bold font-aeonik;
+  }
+
+  .text-display-lg {
+    @apply text-4xl font-bold font-aeonik;
+  }
+
+  .text-heading-1 {
+    @apply text-4xl font-semibold font-aeonik;
+  }
+  
+  .text-heading-2 {
+    @apply text-3xl font-semibold font-aeonik;
+  }
+
+  .text-heading-3 {
+    @apply text-xl font-semibold font-aeonik;
+  }
+
+  .text-body-lg {
+    @apply text-lg font-normal font-inter;
+  }
+
+  .text-body-md {
+    @apply text-base font-normal font-inter;
+  }
+
+  .text-body-sm {
+    @apply text-sm font-normal font-inter;
+  }
+  
+  .text-label {
+    @apply text-xs font-medium font-inter uppercase tracking-wider;
+  }
+
+  .text-caption {
+    @apply text-xs font-normal font-inter;
+  }
+}
+
+@layer components {
+  /* Strathon Design System Component Styles */
+  .strathon-button-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground;
+    @apply transition-all duration-150 ease-in-out;
+    @apply hover:shadow-md hover:-translate-y-px;
+  }
+  
+  .strathon-button-secondary {
+    @apply bg-secondary border border-border text-secondary-foreground;
+    @apply hover:bg-secondary/80 transition-all duration-150 ease-in-out;
+  }
+  
+  .strathon-card {
+    @apply bg-card border border-border rounded-lg shadow-sm p-6;
+  }
+  
+  .strathon-badge-success {
+    @apply bg-green-500/10 text-green-700 border border-green-500/20;
+  }
+  
+  .strathon-badge-warning {
+    @apply bg-yellow-500/10 text-yellow-700 border border-yellow-500/20;
+  }
+  
+  .strathon-badge-error {
+    @apply bg-red-500/10 text-red-700 border border-red-500/20;
+  }
+}

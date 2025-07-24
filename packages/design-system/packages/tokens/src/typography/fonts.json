@@ -1,0 +1,51 @@
+{
+  "font": {
+    "family": {
+      "aeonik": { "value": ["Aeonik", "Inter", "system-ui", "sans-serif"] },
+      "inter": { "value": ["Inter", "system-ui", "sans-serif"] },
+      "mono": { "value": ["JetBrains Mono", "Consolas", "Monaco", "monospace"] }
+    },
+    "size": {
+      "display-xl": { "value": "48px" },
+      "display-lg": { "value": "36px" },
+      "heading-1": { "value": "32px" },
+      "heading-2": { "value": "24px" },
+      "heading-3": { "value": "20px" },
+      "body-lg": { "value": "18px" },
+      "body-md": { "value": "16px" },
+      "body-sm": { "value": "14px" },
+      "label": { "value": "12px" },
+      "caption": { "value": "11px" }
+    },
+    "weight": {
+      "regular": { "value": "400" },
+      "medium": { "value": "500" },
+      "semibold": { "value": "600" },
+      "bold": { "value": "700" }
+    },
+    "line-height": {
+      "display-xl": { "value": "1.1" },
+      "display-lg": { "value": "1.2" },
+      "heading-1": { "value": "1.2" },
+      "heading-2": { "value": "1.3" },
+      "heading-3": { "value": "1.3" },
+      "body-lg": { "value": "1.6" },
+      "body-md": { "value": "1.6" },
+      "body-sm": { "value": "1.5" },
+      "label": { "value": "1.4" },
+      "caption": { "value": "1.4" }
+    },
+    "letter-spacing": {
+      "display-xl": { "value": "-0.02em" },
+      "display-lg": { "value": "-0.01em" },
+      "heading-1": { "value": "0" },
+      "heading-2": { "value": "0" },
+      "heading-3": { "value": "0" },
+      "body-lg": { "value": "0" },
+      "body-md": { "value": "0" },
+      "body-sm": { "value": "0" },
+      "label": { "value": "0.05em" },
+      "caption": { "value": "0" }
+    }
+  }
+}

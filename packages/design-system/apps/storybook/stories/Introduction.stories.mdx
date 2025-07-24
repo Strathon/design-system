@@ -1,0 +1,143 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction/Welcome" />
+
+# Strathon Design System v1.0
+
+Welcome to the **Strathon Design System** - the foundational layer for all Strathon AI Trust Layer interfaces. This design system provides enterprise-grade UI components, design tokens, and patterns that ensure consistency, accessibility, and performance across our platform.
+
+## 🎯 **Purpose**
+
+The Strathon Design System serves as our **Visual Constitution**, ensuring:
+
+- **Consistency**: Unified experience across Pulse, Compass, Forge, and future interfaces
+- **Accessibility**: WCAG 2.1 AA compliance built into every component
+- **Performance**: Optimized components with <500KB bundle size
+- **Developer Experience**: TypeScript-first with comprehensive documentation
+- **Enterprise Quality**: Professional interfaces that build customer trust
+
+## 🏗️ **Architecture**
+
+Our design system follows a modular architecture:
+
+```
+@strathon/design-system/
+├── @strathon/tokens     # Design tokens (colors, typography, spacing)
+├── @strathon/ui         # React components
+├── @strathon/icons      # SVG icon library
+└── @strathon/utils      # Shared utilities
+```
+
+## 🎨 **Design Principles**
+
+### 1. **Clarity Above All**
+Information hierarchy is clear and scannable. Critical information is accessible within 3 seconds.
+
+### 2. **Trust by Default**
+Professional visual design and consistent interactions build confidence in our AI governance platform.
+
+### 3. **Accessibility First**
+Every component meets WCAG 2.1 AA standards with proper keyboard navigation and screen reader support.
+
+### 4. **Performance Optimized**
+Components are built for speed with tree shaking, lazy loading, and minimal runtime overhead.
+
+### 5. **Context Engineering**
+Components adapt to different contexts while maintaining consistency.
+
+## 🚀 **Getting Started**
+
+### Installation
+
+```bash
+npm install @strathon/ui @strathon/tokens
+```
+
+### Basic Usage
+
+```tsx
+import { Button, Card, Badge } from '@strathon/ui';
+
+function App() {
+  return (
+    <Card>
+      <h1>Welcome to Strathon</h1>
+      <Badge variant="success">Active</Badge>
+      <Button variant="default">Get Started</Button>
+    </Card>
+  );
+}
+```
+
+### Theme Setup
+
+```tsx
+import '@strathon/tokens/dist/css/tokens.css';
+
+function App() {
+  return (
+    <div data-theme="light"> {/* or "dark" */}
+      {/* Your app content */}
+    </div>
+  );
+}
+```
+
+## 📚 **Documentation Structure**
+
+- **Foundation**: Design tokens, colors, typography, spacing
+- **Components**: Interactive UI components with examples
+- **Patterns**: Common UI patterns and layouts
+- **Guidelines**: Usage guidelines and best practices
+
+## 🎪 **Component Categories**
+
+### Navigation
+- Sidebar, Breadcrumbs, Tabs, Pagination
+
+### Data Display  
+- DataGrid, Charts, Metrics Cards, Badges
+
+### Forms
+- Input, Select, Checkbox, Radio, Date Picker
+
+### Feedback
+- Alerts, Toasts, Modals, Loading States
+
+### Layout
+- Grid, Container, Card, Separator
+
+### Specialized
+- Monaco Editor, Terminal Output, Heatmap, Timeline
+
+## 🔧 **Development**
+
+This design system is built with:
+
+- **React 18+** with TypeScript
+- **Tailwind CSS** for styling
+- **Radix UI** for accessible primitives
+- **Class Variance Authority** for component variants
+- **Storybook** for documentation
+- **Jest + Testing Library** for testing
+
+## 📈 **Performance Targets**
+
+- **Bundle Size**: <500KB gzipped for complete library
+- **Tree Shaking**: 100% support for unused component elimination
+- **Runtime Performance**: <16ms component render time
+- **Accessibility**: 100% WCAG 2.1 AA compliance
+
+## 🤝 **Contributing**
+
+The design system follows our Context Engineering methodology and ExOs principles for exponential scaling. All components are built with:
+
+- Comprehensive TypeScript definitions
+- Extensive test coverage (>95%)
+- Accessibility testing with axe-core
+- Performance benchmarks
+- Storybook documentation
+
+---
+
+**Ready to build world-class AI governance interfaces?** Explore the components and start building! 🚀

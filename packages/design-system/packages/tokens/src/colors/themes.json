@@ -1,0 +1,46 @@
+{
+  "theme": {
+    "light": {
+      "background": { "value": "{color.surface.primary}" },
+      "foreground": { "value": "{color.strathon.black}" },
+      "card": { "value": "{color.surface.primary}" },
+      "card-foreground": { "value": "{color.strathon.black}" },
+      "popover": { "value": "{color.surface.primary}" },
+      "popover-foreground": { "value": "{color.strathon.black}" },
+      "primary": { "value": "{color.strathon.red.500}" },
+      "primary-foreground": { "value": "{color.surface.primary}" },
+      "secondary": { "value": "{color.strathon.gray.100}" },
+      "secondary-foreground": { "value": "{color.strathon.gray.900}" },
+      "muted": { "value": "{color.strathon.gray.100}" },
+      "muted-foreground": { "value": "{color.strathon.gray.500}" },
+      "accent": { "value": "{color.strathon.gray.100}" },
+      "accent-foreground": { "value": "{color.strathon.gray.900}" },
+      "destructive": { "value": "{color.semantic.error.500}" },
+      "destructive-foreground": { "value": "{color.surface.primary}" },
+      "border": { "value": "{color.strathon.gray.300}" },
+      "input": { "value": "{color.strathon.gray.300}" },
+      "ring": { "value": "{color.strathon.red.500}" }
+    },
+    "dark": {
+      "background": { "value": "{color.strathon.gray.900}" },
+      "foreground": { "value": "{color.strathon.gray.50}" },
+      "card": { "value": "{color.strathon.gray.800}" },
+      "card-foreground": { "value": "{color.strathon.gray.50}" },
+      "popover": { "value": "{color.strathon.gray.800}" },
+      "popover-foreground": { "value": "{color.strathon.gray.50}" },
+      "primary": { "value": "{color.strathon.red.500}" },
+      "primary-foreground": { "value": "{color.surface.primary}" },
+      "secondary": { "value": "{color.strathon.gray.800}" },
+      "secondary-foreground": { "value": "{color.strathon.gray.50}" },
+      "muted": { "value": "{color.strathon.gray.800}" },
+      "muted-foreground": { "value": "{color.strathon.gray.400}" },
+      "accent": { "value": "{color.strathon.gray.800}" },
+      "accent-foreground": { "value": "{color.strathon.gray.50}" },
+      "destructive": { "value": "{color.semantic.error.500}" },
+      "destructive-foreground": { "value": "{color.surface.primary}" },
+      "border": { "value": "{color.strathon.gray.700}" },
+      "input": { "value": "{color.strathon.gray.700}" },
+      "ring": { "value": "{color.strathon.red.500}" }
+    }
+  }
+}

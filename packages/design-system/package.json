@@ -1,0 +1,68 @@
+{
+  "name": "@strathon/design-system",
+  "version": "1.0.0",
+  "description": "Strathon Design System - Enterprise-grade UI components and design tokens",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "storybook": "cd apps/storybook && npm run storybook",
+    "build-storybook": "cd apps/storybook && npm run build-storybook",
+    "tokens:build": "cd packages/tokens && npm run build",
+    "ui:build": "cd packages/ui && npm run build",
+    "icons:build": "cd packages/icons && npm run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@turbo/gen": "^1.10.12",
+    "turbo": "^1.10.12",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.0",
+    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "prettier": "^3.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strathon/design-system.git"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "typescript",
+    "ui-components",
+    "strathon",
+    "ai-governance",
+    "enterprise"
+  ],
+  "author": "Strathon Team",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

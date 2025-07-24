@@ -1,0 +1,47 @@
+{
+  "name": "@strathon/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for the Strathon Design System",
+  "main": "dist/js/tokens.js",
+  "module": "dist/js/tokens.esm.js",
+  "types": "dist/js/tokens.d.ts",
+  "style": "dist/css/tokens.css",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "style-dictionary build --config style-dictionary.config.js && npm run build:types",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist/js",
+    "dev": "npm run build -- --watch",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts,.js",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "design-tokens",
+    "strathon",
+    "design-system",
+    "css-variables",
+    "typescript"
+  ],
+  "author": "Strathon Team",
+  "license": "MIT",
+  "devDependencies": {
+    "style-dictionary": "^3.9.2",
+    "typescript": "^5.2.2",
+    "rimraf": "^5.0.5",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.5",
+    "eslint": "^8.50.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strathon/design-system.git",
+    "directory": "packages/tokens"
+  }
+}
