@@ -53,16 +53,11 @@ npm test
 ## 🚀 Deployment
 
 ### Production URLs
-- **Design System**: https://design.strathon.com.br
-- **Storybook**: https://storybook.strathon.com.br
-- **Figma Library**: https://figma.com/strathon-design-system
+- **GitHub Repository**: https://github.com/strathon/design-system
 
 ## 📚 Documentation
 
-- [Design System Documentation](https://design.strathon.com.br)
-- [Storybook](https://storybook.strathon.com.br)
-- [Figma Library](https://figma.com/strathon-design-system)
-- [Component Guidelines](https://docs.strathon.com.br/design-system)
+- [GitHub Repository](https://github.com/strathon/design-system)
 
 ## 🤝 Contributing
 
